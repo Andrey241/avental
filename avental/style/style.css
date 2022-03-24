@@ -8819,7 +8819,6 @@ p {
 }
 
 .col-3 {
-  min-width: 297px;
   max-width: 33.333%;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
@@ -8828,15 +8827,18 @@ p {
 }
 
 .col-6 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   max-width: 50%;
 }
 
 @media (max-width: 960px) {
   .col-3 {
+    max-width: 100%;
+  }
+  .col-6 {
     max-width: 100%;
   }
   .row {
@@ -8929,6 +8931,7 @@ p {
 
 .header__search #search {
   max-width: 240px;
+  width: 100%;
   height: 33px;
   background-color: #efefef;
   margin-left: 31px;
@@ -9067,6 +9070,7 @@ p {
 }
 
 .nav__about-text {
+  margin: 70px 0 128px 0;
   text-align: center;
 }
 
@@ -9075,12 +9079,134 @@ p {
   color: black;
 }
 
-.nav__about-text p + p {
-  margin-top: 40px;
+.nav__about-text p:nth-child(5) {
+  margin-top: 34px;
 }
 
 .nav__about-img img {
-  max-width: 100%;
-  min-height: 207px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.main {
+  background-color: #efefef;
+}
+
+.main__row {
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.main__offers {
+  min-width: 500px;
+}
+
+.main__offers-text {
+  height: 256px;
+}
+
+.main__we-offers {
+  font-size: 2.4rem;
+  line-height: 36px;
+  font-weight: bold;
+  height: 256px;
+}
+
+.main__we-offers p:not(:last-child) {
+  padding-top: 80px;
+}
+
+.main__card {
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+  background: url(../image/bus.png) 137% bottom/81% no-repeat;
+  background-color: #4b8ba7;
+}
+
+.main__more-about-company {
+  padding: 55px 0;
+}
+
+.main__more-about-company span {
+  padding-left: 42px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.main__more-about-company span::before {
+  position: absolute;
+  content: "\f138";
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  color: #3eb489;
+}
+
+.main__card-delivery {
+  padding: 50px 0px 60px 35px;
+}
+
+.main__card-delivery h1 {
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main__card-delivery h1:not(:first-child) {
+  margin-top: 21px;
+}
+
+.main__card-more {
+  margin-left: 35px;
+}
+
+.main__card-more a {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-decoration: underline !important;
+  color: white;
+}
+
+.main__our-company {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  padding: 80px 10px 40px 0;
+  font-weight: 400;
+}
+
+.main__card-circle {
+  position: relative;
+  background-image: none;
+}
+
+.main__card-circle::before {
+  content: "";
+  position: absolute;
+  background-color: #3eb489;
+  width: 420px;
+  height: 420px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transform: translate(73%, -11%);
+      -ms-transform: translate(73%, -11%);
+          transform: translate(73%, -11%);
+}
+
+.main__card-circle::after {
+  content: url(../image/pipe.png);
+  position: absolute;
+  -webkit-transform: translate(100%, -67%);
+      -ms-transform: translate(100%, -67%);
+          transform: translate(100%, -67%);
 }
 /*# sourceMappingURL=style.css.map */

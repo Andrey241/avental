@@ -24,18 +24,20 @@
 }
 
 .col-3 {
-  min-width: 297px;
   max-width: 33.333%;
   flex: 1 1 auto;
 }
 
 .col-6 {
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   max-width: 50%;
 }
 
 @media (max-width: 960px) {
   .col-3 {
+    max-width: 100%;
+  }
+  .col-6 {
     max-width: 100%;
   }
   .row {

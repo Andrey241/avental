@@ -1,0 +1,102 @@
+.main {
+  background-color: #efefef;
+  &__row {
+    column-gap: 30px;
+  }
+
+  &__offers {
+    min-width: 500px;
+  }
+  &__offers-text {
+    height: 256px;
+  }
+
+  &__we-offers {
+    font-size: 2.4rem;
+    line-height: 36px;
+    font-weight: bold;
+    height: 256px;
+    & p:not(:last-child) {
+      padding-top: 80px;
+    }
+  }
+
+  &__card {
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    background: url(../image/bus.png) 137% bottom/81% no-repeat;
+    background-color: $light-blue;
+  }
+
+  &__more-about-company {
+    padding: 55px 0;
+    & span {
+      padding-left: 42px;
+      font-family: $open-sans;
+      font-size: $text__16;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "\f138";
+        left: 0;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: inline-block;
+        color: #3eb489;
+      }
+    }
+  }
+
+  &__card-delivery {
+    padding: 50px 0px 60px 35px;
+    & h1 {
+      font-size: $text__24;
+      font-family: $roboto;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      &:not(:first-child) {
+        margin-top: 21px;
+      }
+    }
+  }
+  &__card-more {
+    margin-left: 35px;
+    & a {
+      font-size: $text__16;
+      font-family: $roboto;
+      font-weight: 400;
+      text-decoration: underline !important;
+      color: white;
+    }
+  }
+
+  &__our-company {
+    font-family: $roboto;
+    font-size: $text__16;
+    line-height: 24px;
+    padding: 80px 10px 40px 0;
+    font-weight: 400;
+  }
+
+  &__card-circle {
+    position: relative;
+    background-image: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $green;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      transform: translate(73%, -11%);
+    }
+    &::after {
+      content: url(../image/pipe.png);
+      position: absolute;
+      transform: translate(100%, -67%);
+    }
+  }
+}

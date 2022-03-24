@@ -88,18 +88,20 @@
     background-color: #dee3e5;
   }
   &__about-text {
+    margin: 70px 0 128px 0;
     text-align: center;
     & p {
       line-height: 24px;
       color: black;
-      & + p {
-        margin-top: 40px;
+      &:nth-child(5) {
+        margin-top: 34px;
       }
     }
   }
 
   &__about-img img {
-    max-width: 100%;
-    min-height: 207px;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
   }
 }
