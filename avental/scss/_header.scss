@@ -1,0 +1,56 @@
+.header {
+  &__row {
+    text-align: center;
+    align-items: center;
+  }
+
+  &__logo {
+    padding: 20px 0;
+  }
+
+  &__info {
+    & p {
+      margin: 0;
+    }
+    & p:not(:last-child) {
+      margin: 0 0 14px 0;
+    }
+    & a {
+      align-items: center;
+      cursor: pointer;
+      color: black;
+    }
+  }
+
+  &__adress {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  &__moscow {
+    display: inline-flex;
+    cursor: pointer;
+    color: black;
+    & i {
+      cursor: pointer;
+      margin-right: 7px;
+      transition: 1s ease all;
+      font-size: $text__14;
+    }
+    &:hover i::before {
+      content: "\f041";
+    }
+  }
+  &__search {
+    display: flex;
+    #search {
+      max-width: 240px;
+      height: 33px;
+      background-color: #efefef;
+      margin-left: 31px;
+      font-size: $text__14;
+    }
+  }
+}
