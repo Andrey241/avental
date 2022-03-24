@@ -5,14 +5,14 @@
   flex-direction: column;
   &__links {
     margin: 0 auto;
-    width: 1100px;
+    width: 960px;
     padding: 25px 0;
   }
 
   &__links-list {
     display: flex;
     & li + li {
-      padding-left: 50px;
+      padding-left: 62px;
     }
     & li {
       position: relative;
@@ -24,7 +24,7 @@
         border-radius: 50%;
         background-color: rgb(9, 90, 27);
         right: 0;
-        transform: translate(30px, 12px);
+        transform: translate(30px, 7px);
       }
     }
     & a {
@@ -38,11 +38,68 @@
     background: url("../image/wellcome.jpg") center center/cover no-repeat;
     height: 248px;
     text-align: center;
-    position: relative;
+    display: table;
   }
   &__main-links {
-    position: absolute;
-    top: 50%;
-    left: 45%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+    & a {
+      font-size: $text__18;
+      color: white;
+    }
+    & span {
+      font-size: $text__18;
+      color: white;
+    }
+  }
+  &__wellcome {
+    text-align: center;
+    padding: 40px 0 58px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__wellcome-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: $text__18;
+    & h1 {
+      font-weight: bold;
+      font-family: $open-sans;
+    }
+  }
+  &__wellcome-description {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: $text__18;
+    align-self: center;
+    & h2 {
+      max-width: 797px;
+      line-height: 21px;
+    }
+  }
+
+  &__about {
+    max-width: 100%;
+    background-color: #dee3e5;
+  }
+  &__about-text {
+    text-align: center;
+    & p {
+      line-height: 24px;
+      color: black;
+      & + p {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__about-img img {
+    max-width: 100%;
+    min-height: 207px;
   }
 }
