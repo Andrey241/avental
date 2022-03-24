@@ -2,6 +2,7 @@
   background-color: #efefef;
   &__row {
     column-gap: 30px;
+    justify-content: center;
   }
 
   &__offers {
@@ -25,7 +26,7 @@
     height: 380px;
     overflow: hidden;
     position: relative;
-    background: url(../image/bus.png) 137% bottom/81% no-repeat;
+    background: url(../image/bus.png) 0% bottom/105% no-repeat;
     background-color: $light-blue;
   }
 
@@ -97,6 +98,47 @@
       content: url(../image/pipe.png);
       position: absolute;
       transform: translate(100%, -67%);
+    }
+  }
+
+  &__with-us {
+    margin-top: 45px;
+  }
+  &__with-us-row {
+    column-gap: 30px;
+    justify-content: center;
+  }
+  &__with-us-title {
+    margin-left: -10px;
+    & h2 {
+      padding-left: 10px;
+      font-weight: 700;
+      font-size: $text__24;
+      font-family: $roboto;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__with-us-card {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__with-us-text {
+    display: flex;
+    flex-direction: column;
+    & p {
+      margin-top: 20px;
+      font-family: $roboto;
+      font-weight: 700;
+      font-size: $text__18;
+    }
+    & span {
+      font-size: $text__14;
+      font-family: $open-sans;
+      &:not(:last-child) {
+        margin-top: 25px;
+      }
     }
   }
 }
