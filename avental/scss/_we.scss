@@ -1,0 +1,37 @@
+.section {
+  &__we {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0 25px 0;
+  }
+  &__we-links ul {
+    display: flex;
+    & li a {
+      font-weight: 700;
+      font-size: $text__16;
+      color: black;
+    }
+
+    & li:not(:last-child) {
+      margin-right: 47px;
+    }
+  }
+
+  &__we-media-links {
+    & p {
+      font-weight: 700;
+      font-size: $text__16;
+      color: black;
+      display: inline-block;
+      margin-right: 55px;
+    }
+    & a {
+      display: inline-block;
+      font-size: $text__18;
+      color: black;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

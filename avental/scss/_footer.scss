@@ -1,0 +1,12 @@
+.footer {
+  background-color: #efefef;
+  &__text {
+    padding: 25px 0;
+    text-align: center;
+    & p {
+      font-family: $roboto;
+      font-size: $text__16;
+      font-weight: 700;
+    }
+  }
+}

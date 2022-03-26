@@ -1,6 +1,12 @@
 .section {
   &__map {
-    display: flex;
+    margin-top: 50px;
+    display: grid;
+    gap: 20px 120px;
+    grid-template-columns: 30% 100%;
+  }
+  &__map-col {
+    flex: 1 1 330px;
   }
   &__requisites {
     display: flex;
@@ -8,7 +14,6 @@
     font-family: $roboto;
     font-weight: 400;
     font-size: $text__16;
-    line-height: 36px;
   }
   &__logo {
     margin-bottom: 45px;
@@ -24,6 +29,7 @@
   }
 
   &__adress {
+    margin-top: 40px;
     position: relative;
     &::before {
       display: inline-block;
@@ -37,6 +43,7 @@
     }
   }
   &__time-and-number {
+    margin-top: 40px;
     position: relative;
     line-height: 20px;
     &::before {
@@ -46,13 +53,18 @@
       font-weight: 600;
       color: $green;
       content: "\f095";
-      transform: translate(-30px, 50%);
+      transform: translate(-30px, 70%);
     }
     & span {
       display: block;
     }
+    & span + a span {
+      margin-top: 10px;
+      color: black;
+    }
   }
   &__mail {
+    margin-top: 40px;
     position: relative;
     &::before {
       display: inline-block;
@@ -77,6 +89,13 @@
       &:hover .section__mail::before {
         color: $light-blue;
       }
+    }
+  }
+
+  &__google-map {
+    & iframe {
+      width: 100%;
+      height: 362px;
     }
   }
 }
