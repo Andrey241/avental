@@ -1,0 +1,82 @@
+.section {
+  &__map {
+    display: flex;
+  }
+  &__requisites {
+    display: flex;
+    flex-direction: column;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: $text__16;
+    line-height: 36px;
+  }
+  &__logo {
+    margin-bottom: 45px;
+  }
+  &__inn-and-kpp {
+    span + span {
+      margin-right: 38px;
+    }
+  }
+
+  &__about-company {
+    margin-left: 30px;
+  }
+
+  &__adress {
+    position: relative;
+    &::before {
+      display: inline-block;
+      position: absolute;
+      font-family: "Font Awesome 6 Free";
+      font-weight: 600;
+      color: $green;
+      content: "\f3c5";
+      left: -30px;
+      top: -2px;
+    }
+  }
+  &__time-and-number {
+    position: relative;
+    line-height: 20px;
+    &::before {
+      display: inline-block;
+      position: absolute;
+      font-family: "Font Awesome 6 free";
+      font-weight: 600;
+      color: $green;
+      content: "\f095";
+      transform: translate(-30px, 50%);
+    }
+    & span {
+      display: block;
+    }
+  }
+  &__mail {
+    position: relative;
+    &::before {
+      display: inline-block;
+      position: absolute;
+      font-family: "Font Awesome 6 free";
+      font-weight: 600;
+      color: $green;
+      content: "\f0e0";
+      transform: translate(-30px, 0);
+      transition: 0.4s ease all;
+    }
+    &:hover::before {
+      color: $light-blue;
+    }
+
+    & a {
+      transition: 0.4s ease all;
+      color: black;
+      &:hover {
+        color: $light-blue;
+      }
+      &:hover .section__mail::before {
+        color: $light-blue;
+      }
+    }
+  }
+}

@@ -9357,4 +9357,113 @@ p {
           align-items: center;
   border: 1px solid black;
 }
+
+.section__map {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section__requisites {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 36px;
+}
+
+.section__logo {
+  margin-bottom: 45px;
+}
+
+.section__inn-and-kpp span + span {
+  margin-right: 38px;
+}
+
+.section__about-company {
+  margin-left: 30px;
+}
+
+.section__adress {
+  position: relative;
+}
+
+.section__adress::before {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  color: #3eb489;
+  content: "\f3c5";
+  left: -30px;
+  top: -2px;
+}
+
+.section__time-and-number {
+  position: relative;
+  line-height: 20px;
+}
+
+.section__time-and-number::before {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 6 free";
+  font-weight: 600;
+  color: #3eb489;
+  content: "\f095";
+  -webkit-transform: translate(-30px, 50%);
+      -ms-transform: translate(-30px, 50%);
+          transform: translate(-30px, 50%);
+}
+
+.section__time-and-number span {
+  display: block;
+}
+
+.section__mail {
+  position: relative;
+}
+
+.section__mail::before {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 6 free";
+  font-weight: 600;
+  color: #3eb489;
+  content: "\f0e0";
+  -webkit-transform: translate(-30px, 0);
+      -ms-transform: translate(-30px, 0);
+          transform: translate(-30px, 0);
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+
+.section__mail:hover::before {
+  color: #4b8ba7;
+}
+
+.section__mail a {
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  color: black;
+}
+
+.section__mail a:hover {
+  color: #4b8ba7;
+}
+
+.section__mail a:hover .section__mail::before {
+  color: #4b8ba7;
+}
 /*# sourceMappingURL=style.css.map */
