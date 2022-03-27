@@ -101,3 +101,37 @@
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+  .header__search {
+    #search {
+      max-width: 135px;
+    }
+  }
+  .nav__links-list li:not(:last-child)::after {
+    content: none;
+  }
+  .nav__links-list {
+    margin-left: 20px;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .nav__links-list li:first-child,
+  .nav__links-list li + li {
+    padding-left: 0;
+  }
+  .nav__about-text {
+    margin: 45px 0 10px 0;
+  }
+  .main__we-offers {
+    width: 250px;
+  }
+  .main__our-company {
+    width: 250px;
+  }
+  .section__time-and-number::before {
+    transform: translate(-80px, 145%);
+  }
+  .section__we-media-links p {
+    margin-bottom: 10px;
+  }
+}
